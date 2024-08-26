@@ -1,0 +1,66 @@
+/*const exercises = [
+  { name: "Jumping Jacks", duration: 60, reps: "1 minuto" },
+  { name: "Trote en el lugar con movimiento de brazos", duration: 120, reps: "2 minutos" },
+  { name: "Burpees", duration: 60, reps: "1 minuto" },
+  { name: "Shadow Boxing", duration: 60, reps: "1 minuto" },
+  { name: "Flexiones", duration: 120, reps: "12-15 repeticiones" },
+  { name: "Remo con mancuerna en posición plank", duration: 120, reps: "12 repeticiones por lado" },
+  { name: "Fondos en silla o banco", duration: 120, reps: "15 repeticiones" },
+  { name: "Plancha lateral con rotación", duration: 120, reps: "10 rotaciones por lado" },
+  { name: "Press de hombros con mancuernas o bandas", duration: 130, reps: "12 repeticiones" },
+  { name: "Curl de bíceps", duration: 130, reps: "15 repeticiones" },
+  { name: "Extensiones de tríceps por encima de la cabeza", duration: 130, reps: "12 repeticiones" },
+  { name: "Superman", duration: 130, reps: "10 repeticiones por lado" },
+  { name: "Enfriamiento y estiramientos", duration: 300, reps: "5 minutos" },
+];*/
+
+/*
+const exercises = [
+  // Calentamiento y Cardio (5 minutos)
+  { name: "Jumping Jacks", duration: 60, reps: "1 minuto" },
+  { name: "Trote en el lugar con movimiento de brazos", duration: 120, reps: "2 minutos" },
+  { name: "Burpees", duration: 60, reps: "1 minuto" },
+  { name: "Shadow Boxing", duration: 60, reps: "1 minuto" },
+
+  // Ejercicios para Abdominales
+  { name: "Plancha", duration: 120, reps: "1 minuto" },
+  { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "100" },
+  { name: "Crunch abdominal oblicuos", duration: 120, reps: "100" },
+  { name: "Elevaciones de piernas", duration: 120, reps: "100" },
+
+  // Ejercicios para Brazos
+  { name: "Flexiones", duration: 120, reps: "12-15 repeticiones" },
+  { name: "Remo con mancuerna en posición plank", duration: 120, reps: "12 repeticiones por lado" },
+  { name: "Fondos en silla o banco", duration: 120, reps: "15 repeticiones" },
+  { name: "Press de hombros con mancuernas o bandas", duration: 130, reps: "12 repeticiones" },
+  { name: "Curl de bíceps", duration: 130, reps: "15 repeticiones" },
+
+  // Enfriamiento y Estiramientos (5 minutos)
+  { name: "Enfriamiento y estiramientos", duration: 300, reps: "5 minutos" },
+]; */
+
+/*
+const exercises = [
+  // Calentamiento y Cardio (5 minutos)
+  { name: "Jumping Jacks", duration: 60, reps: "1 minuto" },
+  { name: "Trote en el lugar con movimiento de brazos", duration: 120, reps: "2 minutos" },
+  { name: "Burpees", duration: 60, reps: "1 minuto" },
+  { name: "Shadow Boxing", duration: 60, reps: "1 minuto" },
+
+  // Ejercicios para Abdominales
+  { name: "Plancha", duration: 120, reps: "1 minuto" },
+  { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "100 repeticiones" },
+  { name: "Crunch abdominal oblicuos", duration: 120, reps: "100 repeticiones" },
+  { name: "Elevaciones de piernas", duration: 120, reps: "100 repeticiones" },
+
+  // Ejercicios Funcionales para Piernas
+  { name: "Sentadillas con salto", duration: 120, reps: "15 repeticiones" },
+  { name: "Lunges alternos", duration: 120, reps: "12 repeticiones por pierna" },
+  { name: "Puente de glúteos", duration: 120, reps: "15 repeticiones" },
+  { name: "Sentadillas sumo", duration: 120, reps: "15 repeticiones" },
+
+  // Ejercicios para Brazos (sin sobrecargar)
+  { name: "Flexiones", duration: 120, reps: "12-15 repeticiones" },
+  { name: "pres militar", duration: 120, reps: "12 repeticiones por lado" },
+  { name: "Curl de bíceps", duration: 120, reps: "15 repeticiones" },
+]; */

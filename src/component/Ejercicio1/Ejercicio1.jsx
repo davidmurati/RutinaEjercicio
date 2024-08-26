@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Ejercicio1.css";
 import audioFile from "./musicaejercicio2.m4a";
-import imagen1 from './OnegaiMuscule1.png';
-import imagen2 from './OnegaiMuscule2.png';
-import imagen3 from './OnegaiMuscule3.png';
-import imagen4 from './OnegaiMuscule4.png';
-import imagen5 from './OnegaiMuscule5.png';
+import imagen1 from './onegaiMuscule1.png';
+import imagen2 from './onegaiMuscule2.png';
+import imagen3 from './onegaiMuscule3.png';
+import imagen4 from './onegaiMuscule4.png';
+import imagen5 from './onegaiMuscule5.png';
 
 const exercises = [
   // Calentamiento y Cardio (5 minutos)

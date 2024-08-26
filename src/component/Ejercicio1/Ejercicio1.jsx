@@ -5,7 +5,7 @@ import imagen1 from './onegaiMuscule1.png';
 import imagen2 from './onegaiMuscule2.png';
 import imagen3 from './onegaiMuscule3.png';
 import imagen4 from './onegaiMuscule4.png';
-import imagen5 from './onegaiMuscule5.png';
+import imagen6 from './onegaiMuscule6.png';
 
 const exercises = [
   // Calentamiento y Cardio (5 minutos)
@@ -81,7 +81,7 @@ function Ejercicio() {
     const changeImageAndPhrase = () => {
       switch (true) {
         case currentExercise < 4:
-          setCurrentImage(imagen1);
+          setCurrentImage(imagen3);
           setCurrentPhrase("Hola, hoy vamos a hacer ejercicios. Esto te acercará más a tu meta.");
           break;
         case currentExercise < 7:
@@ -101,7 +101,7 @@ function Ejercicio() {
           setCurrentPhrase("¡Excelente! Ya casi terminamos el ejercicio.");
           break;
           case currentExercise < 20:
-          setCurrentImage(imagen5);
+          setCurrentImage(imagen6);
           setCurrentPhrase("¡Te felicito! estas apunto de cumplir la rutina de hoy.");
           break;
       }

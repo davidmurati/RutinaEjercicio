@@ -8,7 +8,7 @@ function Navbar() {
     <nav className="navbar">
       <ul>
         <li><a href="/" exact>Inicio</a></li>
-        <li><a href="https://rutina-ejercicio-funcional.vercel.app/Ejercicio2">Ejercicio</a></li>
+        <li><a href="/Ejercicio2">Ejercicio</a></li>
         <li><a href="/#sobre-la-web">Información</a></li>
         
       </ul>

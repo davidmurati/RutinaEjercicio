@@ -9,6 +9,11 @@
     padding: 0px;
     background-color: #282c34;
   }
+
+  
+  h3 {
+    color: black !important;
+  }
   
   .titulo h2 {
     font-size: 3rem; /* Tamaño grande para destacar el título */
@@ -115,6 +120,7 @@
   button:hover:not(:disabled) {
     background-color: #21a1f1;
   }
+
   
   @media (max-width: 600px) {
     h1 {

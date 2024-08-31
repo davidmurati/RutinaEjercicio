@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../Ejercicio1/Ejercicio1.css";
+import "./Ejercicio2.css";
 import audioFile from "../Ejercicio1/musicaejercicio2.m4a";
 import imagen1 from './ImagenEntrenador/onegaiMuscule1.png';
 import imagen2 from './ImagenEntrenador/onegaiMuscule2.png';
@@ -268,7 +268,7 @@ const previousExercise = () => {
        <button onClick={() => skipAudio(300)}>Adelantar 5 min</button>
        <button onClick={() => skipAudio(-300)}>Retroceder 5 min</button>
      </div>
-     <p>{currentPhrase }</p>
+     <h3>{currentPhrase }</h3>
      <img src={currentImage} className="App-logo" alt="imagen de ejercicio" />
      <audio ref={audioRef} src={audioFile} />
    </div>

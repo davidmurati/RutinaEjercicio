@@ -14,7 +14,7 @@ function App() {
     <Router>
      <Switch>
         <Route exact path="/">
-          <Inicio />
+          <Ejercicio2 />
         </Route>
         <Route exact path="/Ejercicio2">
           <Ejercicio2 />

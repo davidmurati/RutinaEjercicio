@@ -6,85 +6,112 @@ import imagen2 from './ImagenEntrenador/onegaiMuscule2.png';
 import imagen3 from './ImagenEntrenador/onegaiMuscule3.png';
 import imagen4 from './ImagenEntrenador/onegaiMuscule4.png';
 import imagen6 from './ImagenEntrenador/onegaiMuscule6.png';
+
+import imagenCalentamiento1 from './ImagenesEjercicios/Calentamiento/Burpees.png';
+import imagenCalentamiento2 from './ImagenesEjercicios/Calentamiento/JumpingJacks.png';
+import imagenCalentamiento3 from './ImagenesEjercicios/Calentamiento/MountainClimbers.jpg';
+import imagenCalentamiento4 from './ImagenesEjercicios/Calentamiento/SaltosPatinador.jpg';
+import imagenCalentamiento5 from './ImagenesEjercicios/Calentamiento/ShadowBoxing.jpg';
+
+import imagenZona1 from './ImagenesEjercicios/ZonaInferior/Lunge.jpg';
+import imagenZona2 from './ImagenesEjercicios/ZonaInferior/Cuadrupedia.png';
+import imagenZona3 from './ImagenesEjercicios/ZonaInferior/LungeLaterales.png';
+import imagenZona4 from './ImagenesEjercicios/ZonaInferior/SentadillaSimples.jpg';
+import imagenZona5 from './ImagenesEjercicios/ZonaInferior/Step-ups.jpg';
+import imagenZona6 from './ImagenesEjercicios/ZonaInferior/SentadillaSumo.jpg';
+
+import imagenZonaM1 from './ImagenesEjercicios/ZonaMedia/Bicicleta.jpg';
+import imagenZonaM2 from './ImagenesEjercicios/ZonaMedia/Crunches.jpg';
+import imagenZonaM3 from './ImagenesEjercicios/ZonaMedia/FlutterKicks.jpg';
+import imagenZonaM4 from './ImagenesEjercicios/ZonaMedia/LegRaises.jpg';
+import imagenZonaM5 from './ImagenesEjercicios/ZonaMedia/ReverseCrunches.PNG';
+import imagenZonaM6 from './ImagenesEjercicios/ZonaMedia/RussianTwists.jpg';
+
+import imagenZonaS1 from './ImagenesEjercicios/ZonaSuperior/CrabWalk.jpg';
+import imagenZonaS2 from './ImagenesEjercicios/ZonaSuperior/CurlBíceps.jpg';
+import imagenZonaS3 from './ImagenesEjercicios/ZonaSuperior/CurlMartillo.jpg';
+import imagenZonaS4 from './ImagenesEjercicios/ZonaSuperior/DesplazamientoLagarto.jpg';
+import imagenZonaS5 from './ImagenesEjercicios/ZonaSuperior/FondosTríceps.jpg';
+import imagenZonaS6 from './ImagenesEjercicios/ZonaSuperior/PressArnold.jpg';
+import imagenZonaS7 from './ImagenesEjercicios/ZonaSuperior/TrícepsCabeza.jpg';
+
 import Navbar from '../Navbar/Navbar';
 import swal from 'sweetalert';
 
 const calentamiento = [
-  { name: "Jumping Jacks", duration: 60, reps: "1 minuto" },
-  { name: "Trote en el lugar con movimiento de brazos", duration: 120, reps: "2 minutos" },
-  { name: "Burpees", duration: 60, reps: "1 minuto" },
-  { name: "Shadow Boxing", duration: 120, reps: "2 minuto" },
-  { name: "Rodillas al pecho", duration: 60, reps: "1 minuto" },
-  { name: "Mountain Climbers", duration: 60, reps: "1 minuto" },
-  { name: "Talones atras", duration: 120, reps: "2 minuto" },
-  { name: "Saltos de patinador", duration: 60, reps: "1 minuto" },
-  { name: "Salto de uerda", duration: 120, reps: "2 minutos" },
-  { name: "Jump Squats (Salto buscando altura)", duration: 60, reps: "1 minuto" },
+  { name: "Jumping Jacks", duration: 60, reps: "1 minuto",  image: imagenCalentamiento2  },
+  { name: "Trote en el lugar con movimiento de brazos", duration: 120, reps: "2 minutos", image:imagen2  },
+  { name: "Burpees", duration: 60, reps: "1 minuto", image: imagenCalentamiento1  },
+  { name: "Shadow Boxing", duration: 120, reps: "2 minuto", image: imagenCalentamiento5  },
+  { name: "Rodillas al pecho", duration: 60, reps: "1 minuto", image:imagen2  },
+  { name: "Mountain Climbers", duration: 60, reps: "1 minuto", image: imagenCalentamiento3  },
+  { name: "Talones atras", duration: 120, reps: "2 minuto", image:imagen2 },
+  { name: "Saltos de patinador", duration: 60, reps: "1 minuto", image: imagenCalentamiento4  },
+  { name: "Salto de cuerda", duration: 120, reps: "2 minutos", image:imagen2 },
+  { name: "Jump Squats (Salto buscando altura)", duration: 60, reps: "1 minuto", image:imagen2  },
 ];
 
 const pierna = [
-  { name: "Sentadillas simples", duration: 120, reps: "12 repeticiones 3 series" },
-  { name: "Lunges laterales", duration: 120, reps: "12 repeticiones por pierna 3 series" },
-  { name: "Sentadillas sumo", duration: 120, reps: "12 repeticiones 3 series" },
-  { name: "Lunges alternos", duration: 120, reps: "12 repeticiones 3 series" },
-  { name: "Elevación de talones", duration: 60, reps: "1 minuto" },
-  { name: "Rodillas al pecho", duration: 60, reps: "1 minuto" },
-  { name: "Step-ups en banco o escalón (subir a caja o escalon)", duration: 120, reps: "12 repeticiones por pierna 3 series" },
-  { name: "Patadas hacia atrás en cuadrupedia", duration: 120, reps: "10 repeticiones por pierna 3 series" },
-  { name: "Trote con rodillas al pecho", duration: 60, reps: "1 minuto" },
-  { name: "Zancadas estáticas", duration: 120, reps: "12 repeticiones por pierna 3 series" },
-  { name: "Sentadillas de pared (Wall Sit)", duration: 60, reps: "1 minuto" },
+  { name: "Sentadillas simples", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona4  },
+  { name: "Lunges laterales", duration: 120, reps: "12 repeticiones por pierna 3 series", image: imagenZona3  },
+  { name: "Sentadillas sumo", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona6},
+  { name: "Lunges alternos", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona1  },
+  { name: "Elevación de talones", duration: 60, reps: "1 minuto", image: imagen3  },
+  { name: "Rodillas al pecho", duration: 60, reps: "1 minuto", image: imagen3  },
+  { name: "Step-ups en banco o escalón (subir a caja o escalon)", duration: 120, reps: "12 repeticiones por pierna 3 series", image: imagenZona5  },
+  { name: "Patadas hacia atrás en cuadrupedia", duration: 120, reps: "10 repeticiones por pierna 3 series", image: imagenZona2  },
+  { name: "Trote con rodillas al pecho", duration: 60, reps: "1 minuto", image: imagen3  },
+  { name: "Zancadas estáticas", duration: 120, reps: "12 repeticiones por pierna 3 series", image: imagen3  },
+  { name: "Sentadillas de pared (Wall Sit)", duration: 60, reps: "1 minuto", image: imagen3  },
 ];
 
 const abdomen = [
-  { name: "Crunches", duration: 60, reps: "50 repeticiones" },
- { name: "Plancha", duration: 60, reps: "1 minuto" },
- { name: "Abdominales tipo bicicleta", duration: 60, reps: "50 repeticiones" },
- { name: "Abdominales con Elevacion de piernas (Leg Raises)", duration: 60, reps: "50 repeticiones" },
- { name: "Mountain Climbers", duration: 60, reps: "1 minuto" },
- { name: "Abdominales tipo remo (Russian Twists)", duration: 60, reps: "80 repeticiones" },
- { name: "Flutter Kicks (pedalea con piernas estiradas)", duration: 60, reps: "1 minuto" },
- { name: "Plancha lateral (Side Plank) (30 segundos por lado)", duration: 60, reps: "1 minuto" },
- { name: "Reverse Crunches", duration: 60, reps: "50 repeticiones" },
- { name: "V-Ups", duration: 60, reps: "50 repeticiones" },
- { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "100 repeticiones" },
- { name: "Crunch abdominal oblicuos", duration: 120, reps: "100 repeticiones" },
- { name: "Elevaciones de piernas", duration: 120, reps: "50 repeticiones" },
+  { name: "Crunches", duration: 60, reps: "50 repeticiones", image: imagenZonaM2  },
+ { name: "Plancha", duration: 60, reps: "1 minuto", image: imagen2  },
+ { name: "Abdominales tipo bicicleta", duration: 60, reps: "50 repeticiones", image: imagenZonaM1  },
+ { name: "Abdominales con Elevacion de piernas (Leg Raises)", duration: 60, reps: "50 repeticiones", image: imagenZonaM4 },
+ { name: "Mountain Climbers", duration: 60, reps: "1 minuto", image: imagenCalentamiento3 },
+ { name: "Abdominales tipo remo (Russian Twists)", duration: 60, reps: "80 repeticiones", image: imagenZonaM6 },
+ { name: "Flutter Kicks (pedalea con piernas estiradas)", duration: 60, reps: "1 minuto", image: imagenZonaM3 },
+ { name: "Plancha lateral (Side Plank) (30 segundos por lado)", duration: 60, reps: "1 minuto", image: imagen2 },
+ { name: "Reverse Crunches", duration: 60, reps: "50 repeticiones", image: imagenZonaM5 },
+ { name: "V-Ups", duration: 60, reps: "50 repeticiones", image: imagen2 },
+ { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "100 repeticiones", image: imagen2 },
+ { name: "Crunch abdominal oblicuos", duration: 120, reps: "100 repeticiones", image: imagen2 },
 ];
 
 const brazos = [
-  { name: "Flexiones", duration: 120, reps: "10 repeticiones 3 series" },
-  { name: "Fondos de Tríceps", duration: 120, reps: "15 repeticiones 3 series" },
-  { name: "Curl de Bíceps", duration: 120, reps: "10 repeticiones 3 series" },
-  { name: "Extensiones de Tríceps por Encima de la Cabeza", duration: 120, reps: "10 repeticiones 3 series" },
-  { name: "Elevaciones Laterales", duration: 120, reps: "15 repeticiones 3 series" },
-  { name: "Plancha a Flexión", duration: 60, reps: "1 minuto" },
-  { name: "Curl Martillo", duration: 60, reps: "1 minuto" },
-  { name: "Press Arnold", duration: 120, reps: "10 repeticiones 3 series" },
-  { name: "Flexiones Diamante", duration: 120, reps: "10 repeticiones 3 series" },
-  { name: "Remo con Mancuerna", duration: 120, reps: "10 repeticiones 3 series" },
-  { name: "Fondos en Silla o Banco", duration: 120, reps: "15 repeticiones 3 series" },
-  { name: "Press de Hombros con Mancuernas o Bandas", duration: 120, reps: "15 repeticiones 3 series" },
-  { name: "Press Militar", duration: 130, reps: "12 repeticiones 3 series" },
-  { name: "Curl de Bíceps", duration: 130, reps: "20 repeticiones 3 series" },
-  { name: "Desplazamiento de lagarto", duration: 60, reps: "1 minuto" },
-  { name: "Crab Walk", duration: 60, reps: "1 minuto" },
+  { name: "Flexiones", duration: 120, reps: "10 repeticiones 3 series", image: imagen2 },
+  { name: "Fondos de Tríceps", duration: 120, reps: "15 repeticiones 3 series", image: imagenZonaS5 },
+  { name: "Curl de Bíceps", duration: 120, reps: "10 repeticiones 3 series", image: imagenZonaS2 },
+  { name: "Extensiones de Tríceps por Encima de la Cabeza", duration: 120, reps: "10 repeticiones 3 series", image: imagenZonaS7 },
+  { name: "Elevaciones pesas Laterales", duration: 120, reps: "15 repeticiones 3 series", image: imagen2 },
+  { name: "Plancha a Flexión", duration: 60, reps: "1 minuto", image: imagen2 },
+  { name: "Curl Martillo", duration: 60, reps: "1 minuto", image: imagenZonaS3 },
+  { name: "Press Arnold", duration: 120, reps: "10 repeticiones 3 series", image: imagenZonaS6 },
+  { name: "Flexiones Diamante", duration: 120, reps: "10 repeticiones 3 series", image: imagen2 },
+  { name: "Remo con Mancuerna", duration: 120, reps: "10 repeticiones 3 series", image: imagen2 },
+  { name: "Fondos en Silla o Banco", duration: 120, reps: "15 repeticiones 3 series", image: imagen2 },
+  { name: "Press de Hombros con Mancuernas o Bandas", duration: 120, reps: "15 repeticiones 3 series", image: imagen2 },
+  { name: "Curl de Bíceps", duration: 130, reps: "20 repeticiones 3 series", image: imagen2},
+  { name: "Desplazamiento de lagarto", duration: 60, reps: "1 minuto", image: imagenZonaS4 },
+  { name: "Crab Walk", duration: 60, reps: "1 minuto", image: imagenZonaS1 },
 ];
 
 const descanso = [
-  { name: "Descanso activo", duration: 60, reps: "1 minuto (caminar en el lugar)" },
+  { name: "Descanso activo", duration: 60, reps: "1 minuto (caminar en el lugar)", image:imagen2},
 ];
 
 const Inicio = [
-  { name: "Inicio", duration: 3, reps: "Hola" },
+  { name: "Inicio", duration: 3, reps: "Hola", image:imagen2 },
 ];
 
 const Calentamiento0= [
-  { name: "Trote", duration: 60, reps: "1 minuto" },
+  { name: "Trote", duration: 60, reps: "1 minuto", image:imagen3 },
 ];
 
 const estiramiento = [
-  { name: "Enfriamiento y estiramientos", duration: 300, reps: "5 minutos" },
+  { name: "Enfriamiento y estiramientos", duration: 300, reps: "5 minutos", image:imagen2},
 ];
 
 // Función para obtener ejercicios aleatorios de un array
@@ -249,7 +276,13 @@ const previousExercise = () => {
      <h2>{routine[currentExercise].name}</h2>
      <p>{routine[currentExercise].reps}</p>
        <p className="time-left">{timeLeft} segundos</p>
+       <img
+          src={routine[currentExercise].image}
+          alt={routine[currentExercise].name}
+          className="exercise-image"
+        />
      </div>
+     
      <div className="buttons">
        <button onClick={startWorkout} disabled={isRunning}>
          Iniciar

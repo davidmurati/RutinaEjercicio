@@ -144,3 +144,23 @@
         max-height: 20vh;
     }
   }
+
+  .exercise-image {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Ancho fijo para dispositivos más grandes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .exercise-image {
+      width: 100px; /* Ajusta el ancho para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .exercise-image {
+      width: 80px; /* Ajusta el ancho para pantallas pequeñas */
+    }
+  }

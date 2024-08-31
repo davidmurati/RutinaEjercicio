@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    margin: 0px;
+    padding: 0px;
+    background-color: #282c34;
+  }
+
+  .titulo h2 {
+    font-size: 2rem; /* Tamaño grande para destacar el título */
+    font-weight: 600; /* Peso de la fuente para mayor impacto */
+    color: #00bfff; /* Color azul claro que evoca energía y vitalidad */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra para darle profundidad */
+    margin: 20px 0; /* Espacio alrededor del título */
+    font-family: 'Verdana', sans-serif; /* Tipografía moderna y atractiva */
+    letter-spacing: 2px; /* Espaciado entre letras para un look más dinámico */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves para interacciones */
+}
+
+/* Efecto al pasar el cursor sobre el título */
+.titulo h2:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    color: #1eff96; /* Cambia a un tono de azul más intenso */
+}
+
+.heater-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+ /* Sections */
+.section-about,
+.section-news {
+  width: 800px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.section-about:hover,
+.section-news:hover {
+  transform: translateY(-5px);
+}
+
+.section-about h4,
+.section-news h4 {
+  font-size: 2rem;
+  color: #1a73e8;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 0.5rem;
+}
+
+/* Card styles (additional to existing styles) */
+.card {
+    margin-bottom: 1.5rem;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+  }
+
+  
+  
+  
+  
+  .App {
+    text-align: center;
+    background-color: #dbdde0;
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Logo container styles */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-height: 30vh;
+  }
+  
+  /* Logo styles */
+  .App-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 30vh;
+    margin-bottom: 20px;
+  }
+  
+  .exercise-info {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .exercise-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .time-left {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #61dafb;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #21a1f1;
+  }
+  
+  @media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+  
+    .exercise-info h2 {
+        font-size: 1.5rem;
+    }
+  
+    .time-left {
+        font-size: 2.5rem;
+    }
+  
+    button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+  
+    .App-logo {
+        max-height: 20vh;
+    }
+
+    /* Sections */
+.section-about,
+.section-news {
+    max-width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+  
+}
+

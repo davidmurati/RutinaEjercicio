@@ -7,6 +7,8 @@ import imagen3 from './onegaiMuscule3.png';
 import imagen4 from './onegaiMuscule4.png';
 import imagen6 from './onegaiMuscule6.png';
 
+/*
+
 const exercises = [
   // Calentamiento y Cardio (5 minutos)
   { name: "Jumping Jacks", duration: 60, reps: "1 minuto" },
@@ -42,6 +44,32 @@ const exercises = [
   { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "30 repeticiones 3 series" },
   
   { name: "Estiramiento", duration: 60, reps: "1 minuto (caminar en el lugar)" },
+];
+
+*/
+
+const exercises = [
+  // Calentamiento y Cardio (5 minutos)
+  { name: "Jumping Jacks", duration: 60, reps: "1 minuto" },
+  { name: "Trote en el lugar con movimiento de brazos", duration: 120, reps: "2 minutos" },
+  { name: "Burpees", duration: 60, reps: "1 minuto" },
+  { name: "Shadow Boxing", duration: 60, reps: "1 minuto" },
+
+  // Ejercicios para Abdominales
+  { name: "Plancha", duration: 120, reps: "1 minuto" },
+  { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "100" },
+  { name: "Crunch abdominal oblicuos", duration: 120, reps: "100" },
+  { name: "Elevaciones de piernas", duration: 120, reps: "100" },
+
+  // Ejercicios para Brazos
+  { name: "Flexiones", duration: 120, reps: "12-15 repeticiones" },
+  { name: "Remo con mancuerna en posición plank", duration: 120, reps: "12 repeticiones por lado" },
+  { name: "Fondos en silla o banco", duration: 120, reps: "15 repeticiones" },
+  { name: "Press de hombros con mancuernas o bandas", duration: 130, reps: "12 repeticiones" },
+  { name: "Curl de bíceps", duration: 130, reps: "15 repeticiones" },
+
+  // Enfriamiento y Estiramientos (5 minutos)
+  { name: "Enfriamiento y estiramientos", duration: 300, reps: "5 minutos" },
 ];
 
 function Ejercicio() {

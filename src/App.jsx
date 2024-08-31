@@ -2,7 +2,9 @@ import { useState, useEffect  } from 'react'
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch  } from "react-router-dom";
-import Ejercicio1 from "./component/Ejercicio1/Ejercicio1";
+import Ejercicio1 from "./component/Ejercicio2/Ejercicio2";
+import Inicio from "./component/Inicio/Inicio";
+import Contacto from "./component/Contacto/Contacto";
 
 
 function App() {
@@ -12,7 +14,13 @@ function App() {
     <Router>
      <Switch>
         <Route exact path="/">
+          <Inicio />
+        </Route>
+        <Route exact path="/Ejercicio1">
           <Ejercicio1 />
+        </Route>
+        <Route exact path="/Contacto">
+          <Contacto />
         </Route>
      </Switch>
      </Router>

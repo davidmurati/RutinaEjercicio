@@ -24,7 +24,7 @@ import imagenZonaM1 from './ImagenesEjercicios/ZonaMedia/Bicicleta.jpg';
 import imagenZonaM2 from './ImagenesEjercicios/ZonaMedia/Crunches.jpg';
 import imagenZonaM3 from './ImagenesEjercicios/ZonaMedia/FlutterKicks.jpg';
 import imagenZonaM4 from './ImagenesEjercicios/ZonaMedia/LegRaises.jpg';
-import imagenZonaM5 from './ImagenesEjercicios/ZonaMedia/ReverseCrunches.PNG';
+import imagenZonaM5 from './ImagenesEjercicios/ZonaMedia/ReverseCrunches.png';
 import imagenZonaM6 from './ImagenesEjercicios/ZonaMedia/RussianTwists.jpg';
 
 import imagenZonaS1 from './ImagenesEjercicios/ZonaSuperior/CrabWalk.jpg';

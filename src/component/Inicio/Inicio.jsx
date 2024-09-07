@@ -6,9 +6,7 @@ import Card from "../Card/Card.jsx";
 import Card2 from "../Card/Card2.jsx";
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import noticia1 from './Noticia/duckduckgo2.png';
-import noticia2 from './Noticia/removebg.jpeg';
-import noticia3 from './Noticia/claude.jpeg';
+import gymlove from './Noticia/LogoFitpulse.png';
 import noticia4 from './Noticia/pezargento.jpeg';
 import Noticia5 from './Noticia/ImagenEjercicio1.jpeg';
 
@@ -79,6 +77,8 @@ const Inicio = () => {
                     </Carousel>
                 </section>
             </div>
+
+            <img src={gymlove} className="App-logo" alt="logo" />
 
             <div className="App">
             

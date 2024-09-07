@@ -9,16 +9,17 @@ import imagen6 from './ImagenEntrenador/onegaiMuscule6.png';
 
 import imagenCalentamiento1 from './ImagenesEjercicios/Calentamiento/Burpees.png';
 import imagenCalentamiento2 from './ImagenesEjercicios/Calentamiento/JumpingJacks.png';
-import imagenCalentamiento3 from './ImagenesEjercicios/Calentamiento/MountainClimbers.jpg';
+import imagenCalentamiento3 from './ImagenesEjercicios/Calentamiento/MountainClimbers1.jpg';
 import imagenCalentamiento4 from './ImagenesEjercicios/Calentamiento/SaltosPatinador.jpg';
 import imagenCalentamiento5 from './ImagenesEjercicios/Calentamiento/ShadowBoxing.jpg';
 
 import imagenZona1 from './ImagenesEjercicios/ZonaInferior/Lunge.jpg';
 import imagenZona2 from './ImagenesEjercicios/ZonaInferior/Cuadrupedia.png';
-import imagenZona3 from './ImagenesEjercicios/ZonaInferior/LungeLaterales.png';
+import imagenZona3 from './ImagenesEjercicios/ZonaInferior/SentadillaBulgara.png';
 import imagenZona4 from './ImagenesEjercicios/ZonaInferior/SentadillaSimples.jpg';
 import imagenZona5 from './ImagenesEjercicios/ZonaInferior/Step-ups.jpg';
 import imagenZona6 from './ImagenesEjercicios/ZonaInferior/SentadillaSumo.jpg';
+import imagenZona7 from './ImagenesEjercicios/ZonaInferior/EscaleraCoordinativa.jpg';
 
 import imagenZonaM1 from './ImagenesEjercicios/ZonaMedia/Bicicleta.jpg';
 import imagenZonaM2 from './ImagenesEjercicios/ZonaMedia/Crunches.jpg';
@@ -53,28 +54,27 @@ const calentamiento = [
 
 const pierna = [
   { name: "Sentadillas simples", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona4  },
-  { name: "Lunges laterales", duration: 120, reps: "12 repeticiones por pierna 3 series", image: imagenZona3  },
   { name: "Sentadillas sumo", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona6},
+  { name: "Sentadillas bulgara", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona3},
   { name: "Lunges alternos", duration: 120, reps: "12 repeticiones 3 series", image: imagenZona1  },
   { name: "Elevación de talones", duration: 60, reps: "1 minuto", image: imagen3  },
   { name: "Rodillas al pecho", duration: 60, reps: "1 minuto", image: imagen3  },
   { name: "Step-ups en banco o escalón (subir a caja o escalon)", duration: 120, reps: "12 repeticiones por pierna 3 series", image: imagenZona5  },
   { name: "Patadas hacia atrás en cuadrupedia", duration: 120, reps: "10 repeticiones por pierna 3 series", image: imagenZona2  },
   { name: "Trote con rodillas al pecho", duration: 60, reps: "1 minuto", image: imagen3  },
-  { name: "Zancadas estáticas", duration: 120, reps: "12 repeticiones por pierna 3 series", image: imagen3  },
+  { name: "Ejercicio con escalera coordinativa", duration: 120, reps: "2 minutos", image: imagenZona7  },
   { name: "Sentadillas de pared (Wall Sit)", duration: 60, reps: "1 minuto", image: imagen3  },
 ];
 
 const abdomen = [
-  { name: "Crunches", duration: 60, reps: "50 repeticiones", image: imagenZonaM2  },
- { name: "Plancha", duration: 60, reps: "1 minuto", image: imagen2  },
- { name: "Abdominales tipo bicicleta", duration: 60, reps: "50 repeticiones", image: imagenZonaM1  },
- { name: "Abdominales con Elevacion de piernas (Leg Raises)", duration: 60, reps: "50 repeticiones", image: imagenZonaM4 },
+  { name: "Crunches", duration: 60, reps: "40 repeticiones", image: imagenZonaM2  },
+ { name: "Dorsales", duration: 60, reps: "1 minuto", image: imagen2  },
+ { name: "Abdominales tipo bicicleta", duration: 60, reps: "40 repeticiones", image: imagenZonaM1  },
+ { name: "Abdominales con Elevacion de piernas (Leg Raises)", duration: 60, reps: "40 repeticiones", image: imagenZonaM4 },
  { name: "Mountain Climbers", duration: 60, reps: "1 minuto", image: imagenCalentamiento3 },
  { name: "Abdominales tipo remo (Russian Twists)", duration: 60, reps: "80 repeticiones", image: imagenZonaM6 },
  { name: "Flutter Kicks (pedalea con piernas estiradas)", duration: 60, reps: "1 minuto", image: imagenZonaM3 },
- { name: "Plancha lateral (Side Plank) (30 segundos por lado)", duration: 60, reps: "1 minuto", image: imagen2 },
- { name: "Reverse Crunches", duration: 60, reps: "50 repeticiones", image: imagenZonaM5 },
+ { name: "Reverse Crunches", duration: 60, reps: "40 repeticiones", image: imagenZonaM5 },
  { name: "V-Ups", duration: 60, reps: "50 repeticiones", image: imagen2 },
  { name: "Crunch abdominal con piernas elevadas", duration: 120, reps: "100 repeticiones", image: imagen2 },
  { name: "Crunch abdominal oblicuos", duration: 120, reps: "100 repeticiones", image: imagen2 },
@@ -87,8 +87,9 @@ const brazos = [
   { name: "Extensiones de Tríceps por Encima de la Cabeza", duration: 120, reps: "10 repeticiones 3 series", image: imagenZonaS7 },
   { name: "Elevaciones pesas Laterales", duration: 120, reps: "15 repeticiones 3 series", image: imagen2 },
   { name: "Superman", duration: 60, reps: "1 minuto", image: imagen2 },
-  { name: "Plancha lateral", duration: 60, reps: "1 minuto 30 s por lado", image: imagen2 },
-  { name: "Curl Martillo", duration: 60, reps: "1 minuto", image: imagenZonaS3 },
+  { name: "Plancha lateral", duration: 60, reps: "1 minuto 20 s por lado", image: imagen2 },
+  { name: "Plancha", duration: 60, reps: "40 s", image: imagen2 },
+  { name: "Curl Martillo", duration: 60, reps: "10 repeticiones 3 series", image: imagenZonaS3 },
   { name: "Press Arnold", duration: 120, reps: "10 repeticiones 3 series", image: imagenZonaS6 },
   { name: "Flexiones Diamante", duration: 120, reps: "10 repeticiones 3 series", image: imagen2 },
   { name: "Remo con Mancuerna", duration: 120, reps: "10 repeticiones 3 series", image: imagen2 },
@@ -112,7 +113,7 @@ const Calentamiento0= [
 ];
 
 const estiramiento = [
-  { name: "Enfriamiento y estiramientos", duration: 300, reps: "5 minutos", image:imagen2},
+  { name: "Estiramientos", duration: 300, reps: "5 minutos", image:imagen2},
 ];
 
 // Función para obtener ejercicios aleatorios de un array
